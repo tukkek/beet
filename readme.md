@@ -10,7 +10,7 @@ beet file.ogg
 beet --volume 100 file.mp3  # 100% volume
 ```
 
-Download precompiled binaries from the releases page. 
+Download precompiled binaries from https://github.com/tukkek/beet/releases/.
 
 Supported systems:
 * Linux
