@@ -70,9 +70,7 @@ func main() {
 		}
 	}
 
-	// Initialize speaker with the decoded format's sample rate.
-	// Buffer size = sampleRate / 100 (10ms buffer) for minimal latency.
-	speaker.Init(format.SampleRate, format.SampleRate.N(time.Second/100))
+	speaker.Init(format.SampleRate, format.SampleRate.N(time.Second/10))
 
 	done := make(chan struct{})
 	speaker.Play(beep.Seq(volStreamer, beep.Callback(func() {
